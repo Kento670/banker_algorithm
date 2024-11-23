@@ -9,28 +9,16 @@ This project implements the Banker’s Algorithm for deadlock avoidance using C+
 
 ## Requirements
 - C/C++ compiler on Linux/Unix environment.
+- input.txt file
 
 ## Compilation
 
 To compile the source files, run the following commands:
 
-    g++ -c producer.cpp -pthread -o producer.o
-    g++ -c consumer.cpp -pthread -o consumer.o
-    g++ -o producer_consumer producer.o consumer.o -pthread
-    ./producer_consumer
+    g++ bankers_algorithm.cpp -o bankers_algorithm
+    ./bankers_algorithm
 
 ## Example Output
 Here’s an example output on Ubuntu in VirtualBox:
 
-    Produced: 83
-    Consumed: 83
-    Produced: 86
-    Produced: 77
-    Consumed: 86
-    Produced: 15
-    Consumed: 77
-    Produced: 93
-    Consumed: 15
-    Produced: 35
-
-    ctrl + c This will stop (terminate) a running program immediately.
+    
